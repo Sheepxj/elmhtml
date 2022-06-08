@@ -1,0 +1,111 @@
+
+/*总容器*/
+.wrapper{
+    width:100%;
+    height:100%;
+}
+
+/*头部*/
+.wrapper header{
+    width: 100%;
+    height: 12vw;
+    background-color: #0097FF;
+    z-index: 1000;
+
+    color: white;
+    font-size: 4.8vw;
+    position: fixed;
+    left:0;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*底部菜单部分*/
+.wrapper .footer{
+    width: 100%;
+    height: 14vw;
+    border-top: solid 1px #ddd;
+
+    position:fixed;
+    left:0;
+    bottom:0;
+    background-color: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.wrapper .footer li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #999;
+    user-select: none;
+    cursor: pointer;
+}
+.wrapper .footer li p{
+    font-size: 2.8vw;
+}
+.wrapper .footer li i{
+    font-size: 5vw;
+}
+
+/*商家列表*/
+.wrapper .bussiness{
+    width: 100%;
+    margin-top: 12vw;
+    margin-bottom: 14vw;
+    display: inline-block;
+}
+
+.wrapper .bussiness li{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2.5vw;
+    border-bottom: solid #666 1px;
+    user-select: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+}
+.wrapper .bussiness li .bussiness-img{
+    position: relative;
+}
+.wrapper .bussiness li .bussiness-img img{
+    width: 18vw;
+    height: 18vw;
+}
+.wrapper .bussiness li .bussiness-img .bussiness-img-quantity{
+    width: 5vw;
+    height: 5vw;
+    background-color: red;
+    color: white;
+    font-size: 3.6vw;
+    border-radius: 2.5vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    right: -1.5vw;
+    top: -1.5vw;
+}
+.wrapper .bussiness li .bussiness-info{
+    margin-left: 3vw;
+}
+.wrapper .bussiness li .bussiness-info h3{
+    font-size: 3.8vw;
+    color:#555;
+    margin-bottom: 1vw;
+}
+.wrapper .bussiness li .bussiness-info p{
+    font-size: 3vw;
+    color:#555;
+}
